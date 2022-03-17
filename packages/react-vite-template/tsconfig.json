@@ -1,0 +1,30 @@
+{
+  "include": ["src/**/*", "types/**/*", "tests/**/*"],
+  "exclude": ["src/assets/**/*", "src/styles/**/*", "node_modules/**/*", "**/*.spec.ts"],
+  "compilerOptions": {
+    // 配置：https://www.typescriptlang.org/zh/tsconfig，Node版本大于V12.18.3
+    "target": "es2019",
+    "module": "esNext",
+    "allowJs": false,
+    "jsx": "react",
+    "declaration": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "noEmit": false,
+    "isolatedModules": false,
+    "strict": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  }
+}
