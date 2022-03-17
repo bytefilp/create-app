@@ -1,0 +1,38 @@
+{
+  "name": "@react-stater/react-vite",
+  "version": "1.0.0",
+  "description": "react流行技术项目模板",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint:style": "stylelint src/**/*.{css,less} --fix",
+    "lint": "lint-staged",
+    "type-check": "tsc",
+    "plop": "plop"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {
+    "@systemlight/fabric": "^1.1.0",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-legacy": "^1.7.1",
+    "@vitejs/plugin-react": "^1.0.7",
+    "lint-staged": "^12.3.6",
+    "postcss": "^8.4.12",
+    "postcss-preset-env": "^7.4.2",
+    "sass": "^1.49.9",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "@systemlight/pure.css": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
